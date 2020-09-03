@@ -28,7 +28,7 @@ namespace Collections
             AddABook("1984", "George", "Orwell", 328, Genre.Scifi);
             foreach(Book book in Library)
             {
-                Console.WriteLine($"{book.Title}, {book.Author.FirstName} {book.Author.LastName}, {book.Genre}");
+                Console.WriteLine($"{book.Title}, {book.Author.FullName()}, {book.Genre}");
             }
             
         }
